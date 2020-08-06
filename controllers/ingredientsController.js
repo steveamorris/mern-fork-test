@@ -24,6 +24,23 @@ router.get("/api/ingredients", (req, res) => {
 // Read One
 
 // Create
+router.post("/api/ingredients", (req, res) => {
+  db.Ingredient.create(req.body)
+  .then((createdIngredient) => {
+    res.json({
+      error: false,
+      data: createdIngredient,
+      message: "Successfully created Ingredient."
+    })
+  })
+  .catch((err) => {
+    res.status(500).json({
+      error: true,
+      data: null,
+      message: "Unable to create Ingredient."
+    })
+  })
+});
 
 // Edit
 
