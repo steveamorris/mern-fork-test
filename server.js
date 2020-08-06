@@ -26,7 +26,7 @@ app.get("*", (req, res) => {
   });
 
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost/mern-starter", {
+  .connect(process.env.MONGODB_URI || "mongodb://localhost/mern-fork-test", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
