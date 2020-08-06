@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const { dirname } = require("path");
+const IngredientsController = require("./controllers/ingredientsController")
 
 const app = express();
 
@@ -18,6 +19,8 @@ app.get("/api/config", (req, res) => {
     success: true,
   });
 });
+
+app.use(IngredientsController);
 
 console.log(process.env.PORT)
 

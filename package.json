@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/steveamorris/mern-starter.git"
+    "url": "git+https://github.com/steveamorris/mern-fork-test.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/steveamorris/mern-starter/issues"
+    "url": "https://github.com/steveamorris/mern-fork-test/issues"
   },
-  "homepage": "https://github.com/steveamorris/mern-starter#readme",
+  "homepage": "https://github.com/steveamorris/mern-fork-test#readme",
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4",
